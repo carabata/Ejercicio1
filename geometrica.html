@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <body bgcolor ="#D5F5E3">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas (Ejercicio 1)</title>
+    <script src="geometrica.js"></script>
+    
+</body>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <center><h1>AREAS Y PERIMETROS DE FIGURAS GEOMETRICAS</h1></center>
+    <br>
+    <br>
+    <br>
+    <div>
+        <div style="background-color:#A9CCE3">
+            <br>
+            <br>
+            <center><h2>CUADRADO</h2></center>
+            <div style="float: right; width: 700px; margin: 0px 0px; padding:0px">
+                <img src="area_cua.png">
+            </div>    
+            <section>
+                <form>
+                    <div style="text-align: right;width:420px">
+                        <h2>AREA Y PERIMETRO</h2>
+                        <div style="text-align: right;width:450px">
+                            <label for="ladocuadrado">
+                                Por favor ingrese el valor de un lado del cuadrado
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div style="text-align: right;width:370px">
+                        <input id="ladocuadrado" type="number"/>
+                    </div>
+                    <br>
+                    <br>
+                    <div style="text-align: right;width:370px">
+                        <button type="button" onclick="onclickButtonAreaCuadro()">
+                            HALLAR AREA CUADRADO
+                        </button>
+                        <br>
+                        <br>
+                    </div>
+                    <div style="text-align: right;width:380px">
+                    <p id="resultCuadro"></p>
+                    </div>
+                    <br>
+                    <div style="text-align: right;width:397px">
+                        <button type="button" onclick="onclickButtonPerimetroCuadro()">
+                            HALLAR PERIMETRO CUADRADO
+                        </button>
+                    </div>
+                    <br>
+                    <div style="text-align: right;width:380px">
+                    <p id="resultCuadro1"></p>
+                    </div>
+                    <br>
+                    <br>
+                </form>
+            </section>
+        </div>
+    </div>
+    <div>
+        <div style="background-color:#D98880 ">
+            <br>
+            <br>
+            <center><h2>TRIANGULO</h2></center>
+            <div style="float: right; width: 500px; margin: 20px 0px; padding:20px">
+                <img src="area_tria.png">
+            </div> 
+            <section>
+                <form>
+                    <div style="text-align: right;width:320px">
+                        <h2> AREA </h2>  
+                    </div>  
+                    <div style="text-align: right;width:450px">
+                        <label for="trianguloBase">
+                            Por favor ingrese el valor de la base del triangulo
+                        </label>
+                        <br>
+                        <br>
+                    </div>
+                    <div style="text-align: right;width:380px">
+                        <input id="trianguloBase" type="number">
+                    </div>
+                    <br>
+                    <div style="text-align: right;width:420px">
+                        <label for="trianguloAltura">
+                            Por favor ingrese la altura del triangulo
+                        </label>
+                        <br>
+                        <br>
+                    </div>
+                    <div style="text-align: right;width:380px">
+                        <input id="trianguloAltura" type="number">
+                    </div>
+                    <br>
+                    <br>
+                    <div style="text-align: right;width:385px">
+                        <button type="button" onclick="onclickButtonAreaTriangulo()">
+                            HALLAR AREA TRIANGULO
+                        </button>
+                    </div>
+                    <div style="text-align: right;width:397px">
+                    <p id="resultTriangulo"></p>
+                    </div>
+                    <br>
+                    <div style="text-align: right;width:360px">
+                        <h2>PERIMETRO</h2>  
+                    </div>
+                    <div style="text-align: right;width:400px">
+                        <label for="trianguloLado1">
+                            Por favor ingrese el valor de un lado
+                        </label>
+                        <br>
+                        <br>
+                    </div>
+                    <div style="text-align: right;width:380px">
+                        <input id="trianguloLado1" type="number">
+                    </div>
+                    <br>
+                    <div style="text-align: right;width:400px">
+                        <label for="trianguloLado2">
+                            Por favor ingrese el valor del otro lado
+                        </label>
+                        <br>
+                        <br>
+                    </div>
+                    <div style="text-align: right;width:380px">
+                        <input id="trianguloLado2" type="number">
+                    </div>
+                    <br>
+                    <br>
+                    <div style="text-align: right; width:0px; margin: 0px 175px; padding: 0px">
+                        <button type="button" onclick="onclickButtonPerimetroTriangulo()">
+                            HALLAR PERIMETRO TRIANGULO
+                        </button>
+                        <br>
+                    </div>
+                    <div style="text-align: right;width:397px">
+                    <p id="resultTriangulo1"></p>
+                    <div style="text-align: right;width:397px">
+                    <br>
+                </form>
+            </section>    
+        </div>
+    </div>
+    <div>
+        <center><h2>CIRCULO</h2></center>
+        <br>
+        <br>
+        <div style="float: right; width: 600px; margin: 0px 0px; padding:0px">
+            <img src="area_circu.png">
+        </div> 
+        <section>
+            <form>
+                <div style="text-align: right;width:380px">
+                    <h2> AREA Y PERIMETRO </h2>  
+                </div>  
+                <div style="text-align: right;width:370px">
+                    <label for="circuloradio">
+                        Por favor ingrese el valor del radio
+                    </label>
+                    <br>
+                    <br>
+                </div>
+                <div style="text-align: right;width:350px">
+                    <input id="circuloradio" type="number">
+                </div>
+                <br>
+                <br>
+                <div style="text-align: right; width:0px; margin: 0px 180px; padding: 0px">
+                    <button type="button" onclick="onclickButtonAreaCirculo()">
+                        HALLAR AREA CIRCULO
+                    </button>
+                    <br>
+                    <br>
+                </div>
+                <div style="text-align: right;width:397px">
+                <p id="resultCirculo"></p>
+                </div>
+                <br>
+                <div style="text-align: right; width:0px; margin: 0px 160px; padding: 0px">
+                    <button type="button" onclick="onclickButtonPerimetroCirculo()">
+                        HALLAR PERIMETRO CIRCULO
+                    </button>
+                    <br>
+                    <br>
+                </div>
+                <div style="text-align: right;width:397px">
+                <p id="resultCirculo1"></p>
+                </div>
+                <br>
+                <br>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
